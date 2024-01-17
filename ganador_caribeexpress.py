@@ -1,4 +1,4 @@
-import random
+
 
 lista_premio = ["F-9416-E50B-DEED",
 "C-F833-CA3B-DF0A ",
@@ -101,19 +101,16 @@ lista_premio = ["F-9416-E50B-DEED",
 "7-E414-893B-DEAB",       
 "8-1C2E-AAD5-DED8"]
 
+ #"8-1C2E-AAD5-DED8"
 
-boleto_ganador = "8-1C2E-AAD5-DED8"
+boleto_ganador = input("coloca el numero de ticket:" )
 
-#r = random.choice(lista_premio)
-#print(r)
+for ticket in lista_premio:
+    if ticket == boleto_ganador:
+        print("usted acaba de ganarse un carro ")
+        break
 
-cantidad = 0
-for premio in lista_premio:
-    while cantidad >= 100:
-        if premio == boleto_ganador:
-            print("ganaste un carro")
-            cantidad =+ 1
-        else:
-            print("no ganaste nada")    
-
+else:
+    print("usted se guallo")
+       
 
